@@ -1,0 +1,22 @@
+.btn-custom-submit {
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(22, 168, 162);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+}
+.btn-custom-submit:disabled {
+    background-color: rgb(180, 180, 180);
+    color: white;
+    cursor: not-allowed;
+}
+.btn-custom-submit:not(:disabled):hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em rgb(12, 148, 142);
+}
+.btn-custom-submit:not(:disabled):active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em rgb(12, 148, 142);
+}
