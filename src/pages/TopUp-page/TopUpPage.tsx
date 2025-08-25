@@ -65,6 +65,24 @@ export const TopUpPage: React.FC = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="m-5 basi-[40%]">
+                            <h3 className="text-2xl font-bold">Price details</h3>
+                            <div className="flex flex-col justify-around">
+                                <div className="flex flex-row justify-between">
+                                    <p>Demomiation</p>
+                                    <p className="font-bold">100.000 VND</p>
+                                </div>
+                                <div className="flex flex-row justify-between">
+                                    <p>Discount 1%</p>
+                                    <p className="font-bold">9.500 VND</p>
+                                </div>
+                                <div className="flex flex-row justify-between">
+                                    <p>Total</p>
+                                    <p className="font-bold">91.500 VND</p>
+                                </div>
+                            </div>
+                            <SubmitButton children="Pay" />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import "./SubmitButton.css";
 interface SubmitButtonProps {
-    onClick: () => void;
+    onClick?: () => void;
     disabled?: boolean;
     children: React.ReactNode;
     className?: string;
