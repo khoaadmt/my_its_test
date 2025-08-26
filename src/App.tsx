@@ -7,6 +7,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/topup" element={<TopUpPage />} />
+            <Route path="/test" element={<TopUpPage />} />
         </Routes>
     );
 }

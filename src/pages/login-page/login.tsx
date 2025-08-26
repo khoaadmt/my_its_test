@@ -17,14 +17,27 @@ export default function Login() {
             return digits.slice(0, 4) + " " + digits.slice(4);
         }
         if (digits.length <= 10) {
-            return digits.slice(0, 4) + " " + digits.slice(4, 7) + " " + digits.slice(7);
+            return (
+                digits.slice(0, 4) +
+                " " +
+                digits.slice(4, 7) +
+                " " +
+                digits.slice(7)
+            );
         }
 
-        let formatted = digits.slice(0, 4) + " " + digits.slice(4, 8) + " " + digits.slice(8, 11);
+        let formatted =
+            digits.slice(0, 4) +
+            " " +
+            digits.slice(4, 8) +
+            " " +
+            digits.slice(8, 11);
         return formatted;
     };
 
-    const handleInputPhoneNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleInputPhoneNumberChange = (
+        e: React.ChangeEvent<HTMLInputElement>,
+    ) => {
         setPhoneNumber(formatPhone(e.target.value));
     };
 
@@ -50,7 +63,11 @@ export default function Login() {
                     handleInputOnChange={handleInputPhoneNumberChange}
                 />
 
-                <SubmitButton onClick={handleBtnSentToOTPClick} disabled={!isValidLength} children={"Sent to OTP"} />
+                <SubmitButton
+                    onClick={handleBtnSentToOTPClick}
+                    disabled={!isValidLength}
+                    children={"Sent to OTP"}
+                />
             </div>
         </>
     );

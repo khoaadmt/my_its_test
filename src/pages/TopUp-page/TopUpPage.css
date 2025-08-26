@@ -1,6 +1,5 @@
 .top-up-card-container {
-    display: flex;
-    flex-direction: row;
+    margin: 0 6%;
 }
 
 .buy-top-up-card-container {
@@ -11,7 +10,7 @@
 .card-value-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .card-value {
@@ -23,7 +22,7 @@
 }
 
 .price-details {
-    width: 30%;
+    width: 40%;
     border: solid 1px #667085;
     border-radius: 8px;
 }
