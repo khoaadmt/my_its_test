@@ -1,20 +1,13 @@
-.top-up-card-container {
-    margin: 0 6%;
-}
-
 .buy-top-up-card-container {
     display: flex;
     flex-direction: column;
-    width: 60%;
 }
 .card-value-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
 }
 
 .card-value {
-    padding: 0.4rem 1rem;
     border: 0.1rem solid #edeeee;
     border-radius: 8px;
     text-align: center;
@@ -22,7 +15,6 @@
 }
 
 .price-details {
-    width: 40%;
     border: solid 1px #667085;
     border-radius: 8px;
 }
