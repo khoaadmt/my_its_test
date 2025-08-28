@@ -6,11 +6,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --Border-boder-primary: rgba(0, 0, 0, 0.051);
+    --ShadowShadow-sm: rgba(0, 0, 0, 0.16);
+}
 body {
     background-color: rgb(201, 201, 201);
+}
+.border-primary {
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid var(--Border-boder-primary, rgba(0, 0, 0, 0.051));
+    box-shadow: 0px 4px 10px 0px var(--ShadowShadow-sm, rgba(0, 0, 0, 0.16));
 }
 .border-gradient {
     border: 0.1rem solid transparent;
     border-radius: 8px;
-    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to bottom, #00a8a2, #d98b2b) border-box;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to bottom, #00a8a2, #d98b2b) border-box;
 }

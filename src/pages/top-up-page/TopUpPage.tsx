@@ -52,8 +52,8 @@ export const TopUpPage: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="price-details mt-4 flex flex-col md:mt-0 md:w-2/5">
-                        <div className="m-4 rounded-lg border border-[#667085] lg:m-7 lg:p-3">
+                    <div className="price-details border-primary mt-4 flex flex-col md:mt-0 md:w-2/5">
+                        <div className="border-primary m-4 rounded-lg lg:m-7 lg:p-3">
                             <div className="flex flex-row items-stretch gap-2 px-3 py-2">
                                 <div>
                                     <FaSimCard className="h-10 w-10 text-[#00a8a2] lg:h-10 lg:w-10 xl:h-12 xl:w-12" />

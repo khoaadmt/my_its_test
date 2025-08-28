@@ -13,11 +13,6 @@
     text-align: center;
     color: #667085;
 }
-
-.price-details {
-    border: solid 1px #667085;
-    border-radius: 8px;
-}
 .price-details p {
     line-height: normal;
 }
