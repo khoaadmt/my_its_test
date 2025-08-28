@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/login-page/login";
-import { TopUpPage } from "./pages/TopUp-page/TopUpPage";
+import { TopUpPage } from "./pages/top-up-page/TopUpPage";
 
 function App() {
     return (
