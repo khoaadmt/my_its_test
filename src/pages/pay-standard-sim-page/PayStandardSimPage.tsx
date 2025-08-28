@@ -15,12 +15,33 @@ export const PayStandardSimPage: React.FC = () => {
                     </h3>
                     <div className="sim-toggle-wrapper w-full">
                         <Segmented
-                            options={["Daily", "Weekly"]}
+                            options={["Standard SIM", "E SIM"]}
                             onChange={(value) => {
                                 console.log(value); // string
                             }}
                             className="sim-segmented w-fu"
                         />
+                    </div>
+                    <p className="py-4 text-lg font-bold">Recipient information</p>
+                    <div className="">
+                        <PhoneInput
+                            className="py-2"
+                            inputValue=""
+                            label="Recipient name"
+                            placeholder="Enter your first and last name"
+                        ></PhoneInput>
+                        <PhoneInput
+                            className="py-2"
+                            inputValue=""
+                            label="Recipient name"
+                            placeholder="Enter your first and last name"
+                        ></PhoneInput>
+                        <PhoneInput
+                            className="py-2"
+                            inputValue=""
+                            label="Recipient name"
+                            placeholder="Enter your first and last name"
+                        ></PhoneInput>
                     </div>
                 </div>
                 <div className="price-details border-primary mt-4 flex flex-col md:mt-0 md:w-2/5">

@@ -4,17 +4,14 @@ import PhoneInput from "../../components/PhoneInput/PhoneInput";
 import SubmitButton from "../../components/SubmitButton/SubmitButton";
 
 export default function TopUpCard() {
-    const denominations = [
-        10000, 20000, 30000, 50000, 100000, 200000, 300000, 500000,
-    ];
+    const denominations = [10000, 20000, 30000, 50000, 100000, 200000, 300000, 500000];
 
     const [selectedDenom, setSelectedDenom] = useState(100000);
     const [phone, setPhone] = useState("");
     const [network, setNetwork] = useState("ITS");
     const discountRate = 0.01; // 1%
 
-    const formatVND = (amount: any) =>
-        new Intl.NumberFormat("vi-VN").format(amount) + " VND";
+    const formatVND = (amount: any) => new Intl.NumberFormat("vi-VN").format(amount) + " VND";
 
     const discountValue = Math.round(selectedDenom * discountRate);
     const total = selectedDenom - discountValue;
@@ -32,9 +29,7 @@ export default function TopUpCard() {
             <div className="top-up-card__inner flex flex-col gap-6 rounded-[20px] bg-white p-8 md:flex-row">
                 {/* Buy pane */}
                 <div className="top-up-card__buy box-content flex-1 pr-2">
-                    <h2 className="pb-8 text-center text-4xl font-bold">
-                        Buy a top-up card
-                    </h2>
+                    <h2 className="pb-8 text-center text-4xl font-bold">Buy a top-up card</h2>
 
                     <h3 className="text-2xl font-bold">Select denomination</h3>
 
@@ -53,13 +48,11 @@ export default function TopUpCard() {
                     </div>
 
                     <div className="pt-4">
-                        <h3 className="text-2xl font-bold">
-                            Top-up phone number
-                        </h3>
+                        <h3 className="text-2xl font-bold">Top-up phone number</h3>
                         <div className="flex flex-col gap-4 pt-4 md:flex-row">
                             <div className="basis-1/2">
                                 <PhoneInput
-                                    clasName="basis-[50%]"
+                                    className="basis-[50%]"
                                     inputValue={phone}
                                     label="Entern mobile phone"
                                 />
@@ -87,18 +80,14 @@ export default function TopUpCard() {
                             <FaSimCard className="h-12 w-12 text-[#00a8a2]" />
                             <div>
                                 <p className="text-sm text-gray-500">Number</p>
-                                <p className="font-bold">
-                                    {phone || "0366 516 834"}
-                                </p>
+                                <p className="font-bold">{phone || "0366 516 834"}</p>
                             </div>
                         </div>
 
                         <div className="flex items-center gap-3 px-3 py-2">
                             <FaWifi className="h-12 w-12 text-[#00a8a2]" />
                             <div>
-                                <p className="text-sm text-gray-500">
-                                    Network provider
-                                </p>
+                                <p className="text-sm text-gray-500">Network provider</p>
                                 <p className="font-bold">{network}</p>
                             </div>
                         </div>
@@ -110,18 +99,12 @@ export default function TopUpCard() {
                         <div className="flex flex-col rounded-lg border bg-white p-4">
                             <div className="flex justify-between py-2">
                                 <p>Denomination</p>
-                                <p className="font-bold">
-                                    {formatVND(selectedDenom)}
-                                </p>
+                                <p className="font-bold">{formatVND(selectedDenom)}</p>
                             </div>
 
                             <div className="flex justify-between py-2">
-                                <p>
-                                    Discount ({Math.round(discountRate * 100)}%)
-                                </p>
-                                <p className="font-bold">
-                                    -{formatVND(discountValue)}
-                                </p>
+                                <p>Discount ({Math.round(discountRate * 100)}%)</p>
+                                <p className="font-bold">-{formatVND(discountValue)}</p>
                             </div>
 
                             <div className="mt-2 flex justify-between border-t py-2 pt-2">
@@ -133,9 +116,7 @@ export default function TopUpCard() {
                         <div>
                             <SubmitButton
                                 onClick={() =>
-                                    alert(
-                                        `Pay ${formatVND(total)} for ${phone || "0366516834"}`,
-                                    )
+                                    alert(`Pay ${formatVND(total)} for ${phone || "0366516834"}`)
                                 }
                             >
                                 Pay

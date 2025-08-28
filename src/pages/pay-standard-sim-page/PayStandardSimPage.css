@@ -1,3 +1,23 @@
 .sim-toggle-wrapper .sim-segmented {
     width: 100% !important;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.sim-toggle-wrapper .ant-segmented-group {
+    justify-content: space-around;
+    padding: 6px 0;
+}
+.sim-toggle-wrapper .ant-segmented-item {
+    width: 47%;
+    padding: 4px;
+    background-color: white;
+    border: 1px solid rgb(0 0 0 / 8%);
+    border-radius: 8px;
+}
+/* .sim-toggle-wrapper .ant-segmented-item:hover {
+    background-color: #00a8a2;
+    color: #fff !important;
+} */
+.sim-toggle-wrapper .ant-segmented-item-selected {
+    background-color: #00a8a2;
+    color: #fff !important;
 }

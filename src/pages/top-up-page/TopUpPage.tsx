@@ -42,7 +42,7 @@ export const TopUpPage: React.FC = () => {
                             </h3>
                             <div className="flex flex-row lg:pt-4">
                                 <PhoneInput
-                                    clasName=""
+                                    className=""
                                     inputValue={phoneNumber}
                                     label="Entern mobile phone"
                                 />
