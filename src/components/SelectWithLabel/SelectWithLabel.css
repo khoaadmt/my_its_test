@@ -1,0 +1,18 @@
+.select-field {
+    position: relative;
+    display: inline-block;
+}
+
+.select-field .select-label {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    background: var(--label-bg, #fff);
+    padding: 0 6px;
+    font-size: 12px;
+    color: #444;
+    pointer-events: none;
+    z-index: 5;
+    line-height: 1;
+    border-radius: 2px;
+}

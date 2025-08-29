@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/login-page/login";
 import { TopUpPage } from "./pages/top-up-page/TopUpPage";
 import { PayStandardSimPage } from "./pages/pay-standard-sim-page/PayStandardSimPage";
-
 function App() {
     return (
         <Routes>

@@ -26,3 +26,53 @@ body {
         linear-gradient(#fff, #fff) padding-box,
         linear-gradient(to bottom, #00a8a2, #d98b2b) border-box;
 }
+
+/* antd select override */
+.ant-select-focused .ant-select-selector {
+    border: 0.1rem solid transparent !important;
+    box-shadow: none !important;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to bottom, #00a8a2, #d98b2b) border-box !important;
+}
+.ant-select-selector:hover {
+    border: 0.1rem solid transparent !important;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to bottom, #00a8a2, #d98b2b) border-box !important;
+}
+
+/* antd check box override */
+.ant-checkbox-wrapper:hover .ant-checkbox-inner {
+    border-color: #1ed0c5 !important;
+}
+
+.ant-checkbox-inner::after {
+    display: none;
+}
+
+.ant-checkbox:hover .ant-checkbox-inner {
+    border-color: #1ed0c5 !important;
+    background-color: transparent !important;
+}
+
+.ant-checkbox-checked:hover {
+    border-color: #1ed0c5 !important;
+    background-color: #16a8a2 !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+    border-color: #1ed0c5 !important;
+    background-color: #16a8a2 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-image: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\
+      <polyline points='20 6 9 17 4 12' \
+      fill='none' stroke='white' stroke-width='3' \
+      stroke-linecap='round' stroke-linejoin='round'/>\
+    </svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}

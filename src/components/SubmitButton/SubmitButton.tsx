@@ -8,10 +8,15 @@ interface SubmitButtonProps {
     className?: string;
 }
 
-const SubmitButton: React.FC<SubmitButtonProps> = ({ onClick, disabled = false, children, className = "" }) => {
+const SubmitButton: React.FC<SubmitButtonProps> = ({
+    onClick,
+    disabled = false,
+    children,
+    className = "",
+}) => {
     return (
         <button className={`btn-custom-submit ${className}`} onClick={onClick} disabled={disabled}>
-            {children} <ArrowRightOutlined />
+            {children}
         </button>
     );
 };
