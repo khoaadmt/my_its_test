@@ -25,7 +25,7 @@ export default function SelectPackagePage() {
     return (
         <div className="mx-5 lg:mx-[6%] 2xl:mx-[15%]">
             <div className="rounded-[20px] bg-white p-4 md:flex-row lg:p-8 xl:px-12 xl:pb-12">
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-col gap-2 md:flex-row">
                     <div className="search-transaction-point w-full">
                         <SearchOutlined className="select-left-icon" />
                         <Select
@@ -43,21 +43,26 @@ export default function SelectPackagePage() {
                             ]}
                         />
                     </div>
-                    <div>
-                        <Dropdown menu={{ items }} trigger={["click"]} placement="bottomLeft">
-                            <Button className="h-full" icon={<IoFilter />}>
-                                Filters
+                    <div className="md:w-45% flex flex-row gap-2 lg:w-[35%]">
+                        <div>
+                            <Dropdown menu={{ items }} trigger={["click"]} placement="bottomLeft">
+                                <Button
+                                    className="h-full px-12 py-1 md:px-4 md:py-0"
+                                    icon={<IoFilter />}
+                                >
+                                    Filters
+                                </Button>
+                            </Dropdown>
+                        </div>
+                        <div className="flex flex-1 flex-row gap-2">
+                            <Button className="h-full w-1/2" icon={<FaArrowLeft />}>
+                                Back
                             </Button>
-                        </Dropdown>
-                    </div>
-                    <div className="flex w-[20%] flex-row gap-2">
-                        <Button className="h-full w-[50%]" icon={<FaArrowLeft />}>
-                            Back
-                        </Button>
 
-                        <Button className="h-full w-[50%]" icon={<FaArrowRight />}>
-                            Confirm
-                        </Button>
+                            <Button className="h-full w-1/2" icon={<FaArrowRight />}>
+                                Confirm
+                            </Button>
+                        </div>
                     </div>
                 </div>
                 <div className="flex w-full flex-row flex-wrap justify-between">

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Pagination, Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "./Pagination.css";
-import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 
 export default function MyPagination() {
     const [page, setPage] = useState<number>(1);
@@ -26,10 +26,10 @@ export default function MyPagination() {
     return (
         <div className="custom-pagination-wrapper">
             <div className="pagination-left">
-                <Button type="text" onClick={goPrev} className="prev-btn">
-                    <FaArrowLeftLong />
-                    <span>Previous</span>
-                </Button>
+                <button onClick={goPrev} className="prev-btn">
+                    <LuArrowLeft className="mr-1 h-5 w-5" />
+                    <span className="prev-btn-content">Previous</span>
+                </button>
             </div>
 
             <div className="pagination-center">
@@ -41,14 +41,15 @@ export default function MyPagination() {
                     showSizeChanger={false}
                     showQuickJumper={false}
                     className="antd-custom-pagination"
+                    responsive={true}
                 />
             </div>
 
             <div className="pagination-right">
-                <Button type="text" onClick={goNext} className="next-btn">
-                    <span>Next</span>
-                    <FaArrowRightLong />
-                </Button>
+                <button onClick={goNext} className="next-btn">
+                    <span className="next-btn-content">Next</span>
+                    <LuArrowRight className="ml-1 h-5 w-5" />
+                </button>
             </div>
         </div>
     );

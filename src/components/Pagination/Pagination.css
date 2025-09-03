@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 32px;
+    padding: 24px 0;
     background: white;
     border-top: solid 1px #0000000d;
 }
@@ -69,4 +69,17 @@
     height: 44px;
     min-width: 44px;
     font-weight: 600;
+}
+.custom-pagination-wrapper .ant-btn {
+    padding: 0 !important;
+}
+@media (max-width: 640px) {
+    .prev-btn-content,
+    .next-btn-content {
+        display: none;
+    }
+    .ant-pagination-jump-next,
+    .ant-pagination-jump-prev {
+        margin-top: 6px;
+    }
 }
