@@ -4,7 +4,7 @@ import { Input } from "antd";
 
 type PhoneInputProps = {
     inputValue: string;
-    label: string;
+    label: React.ReactNode;
     placeholder?: string;
     className?: string;
     handleInputOnChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
