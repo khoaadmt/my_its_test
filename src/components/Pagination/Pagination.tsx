@@ -2,17 +2,16 @@
 import React, { useState } from "react";
 import { Pagination, Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import "./test.css";
+import "./Pagination.css";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
-export default function CustomPagination() {
+export default function MyPagination() {
     const [page, setPage] = useState<number>(1);
-    const totalItems = 800; // ví dụ: 80 pages nếu pageSize = 10
+    const totalItems = 800;
     const pageSize = 10;
 
     const onChange = (p: number) => {
         setPage(p);
-        // xử lý fetch / routing khi đổi trang...
     };
 
     const goPrev = () => {

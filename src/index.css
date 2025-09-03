@@ -67,6 +67,17 @@ body {
     background-color: #16a8a2 !important;
 }
 
+.ant-btn {
+    color: #667085 !important;
+    background-color: white !important;
+}
+
+.ant-btn:hover {
+    color: white !important;
+    background-color: #00a8a2 !important;
+    border-color: #14a09a !important;
+}
+
 .ant-checkbox-checked .ant-checkbox-inner {
     background-image: url("data:image/svg+xml;utf8,\
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\
